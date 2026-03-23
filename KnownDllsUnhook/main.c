@@ -30,7 +30,7 @@ typedef NTSTATUS(NTAPI* pNtAllocateVirtualMemory)(
     PSIZE_T RegionSize,
     ULONG AllocationType,
     ULONG Protect
-    );
+);
 
 typedef NTSTATUS(NTAPI* pNtProtectVirtualMemory)(
     HANDLE ProcessHandle,
@@ -38,7 +38,7 @@ typedef NTSTATUS(NTAPI* pNtProtectVirtualMemory)(
     PSIZE_T NumberOfBytesToProtect,
     ULONG NewAccessProtection,
     PULONG OldAccessProtection
-    );
+);
 
 typedef NTSTATUS(NTAPI* pNtWriteVirtualMemory)(
     HANDLE ProcessHandle,
@@ -46,7 +46,7 @@ typedef NTSTATUS(NTAPI* pNtWriteVirtualMemory)(
     PVOID Buffer,
     SIZE_T NumberOfBytesToWrite,
     PSIZE_T NumberOfBytesWritten
-    );
+);
 
 typedef NTSTATUS(NTAPI* pNtCreateThreadEx)(
     PHANDLE ThreadHandle,
@@ -60,19 +60,19 @@ typedef NTSTATUS(NTAPI* pNtCreateThreadEx)(
     SIZE_T StackSize,
     SIZE_T MaximumStackSize,
     PVOID AttributeList
-    );
+);
 
 typedef NTSTATUS(NTAPI* pNtWaitForSingleObject)(
     HANDLE Handle,
     BOOLEAN Alertable,
     PLARGE_INTEGER Timeout
-    );
+);
 
 typedef NTSTATUS(NTAPI* pNtOpenSection)(
     PHANDLE SectionHandle,
     ACCESS_MASK DesiredAccess,
     POBJECT_ATTRIBUTES ObjectAttributes
-    );
+);
 
 typedef NTSTATUS(NTAPI* pNtMapViewOfSection)(
     HANDLE SectionHandle,
@@ -85,7 +85,7 @@ typedef NTSTATUS(NTAPI* pNtMapViewOfSection)(
     ULONG InheritDisposition,
     ULONG AllocationType,
     ULONG Protect
-    );
+);
 
 pNtAllocateVirtualMemory g_NtAllocateVirtualMemory = NULL;
 pNtProtectVirtualMemory g_NtProtectVirtualMemory = NULL;
