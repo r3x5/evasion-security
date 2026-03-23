@@ -1,7 +1,7 @@
 
 /*
- *		Author: R3x5
- *		GitHub: https://github.com/R3x5
+ *		Author: r3x5
+ *		GitHub: https://github.com/r3x5
  *
  *
  *		This code is only for test and lab enviroments
